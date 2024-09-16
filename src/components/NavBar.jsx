@@ -7,7 +7,9 @@ export const NavBar = () => {
         <Link className="navbar-brand" to="/">
           SpringJPA
         </Link>
-        <ButtonNew />
+        <Link className="navbar-brand" to="/books">Books</Link>
+        <ButtonNew title="New Employee" to="/new-employee" />
+        
       </div>
     </nav>
   );

@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { getEmployeeById , updateEmployee } from "../../service/employee.service";
+import {
+  getEmployeeById,
+  updateEmployee,
+} from "../../service/employee.service";
+import { FormItem } from "../../components/UI/FormItem";
+import { BackTo } from "../../components/UI/Button/BackTo";
 
 export const EditEmployeePage = () => {
   const { id } = useParams();
@@ -35,30 +40,29 @@ export const EditEmployeePage = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        name="name"
+      <FormItem
+        title="Name"
         value={employee.name}
         onChange={handleChange}
-        type="text"
-        placeholder="Name"
+        name="name"
       />
-      <input
-        name="lastName"
+      <FormItem
+        title="Last Name"
         value={employee.lastName}
         onChange={handleChange}
-        type="text"
-        placeholder="Last Name"
+        name="lastName"
       />
-      <input
-        name="age"
+      <FormItem
+        title="Age"
         value={employee.age}
         onChange={handleChange}
-        type="number"
-        placeholder="Age"
+        name="age"
       />
+
       <button type="submit" className="btn btn-outline-success">
         Save
       </button>
+      <BackTo to="/" />
     </form>
   );
 };

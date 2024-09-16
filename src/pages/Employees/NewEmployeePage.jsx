@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { createEmployee } from "../../service/employee.service";
 import { useForm } from "../../hooks/useForm";
 import { FormItem } from "../../components/UI/FormItem";
+import { BackTo } from "../../components/UI/Button/BackTo";
 
 export const NewEmployeePage = () => {
   const navigate = useNavigate();
@@ -47,6 +48,7 @@ export const NewEmployeePage = () => {
         <button type="submit" className="btn btn-outline-success">
           Create
         </button>
+        <BackTo to="/"/>
       </form>
     </>
   );
