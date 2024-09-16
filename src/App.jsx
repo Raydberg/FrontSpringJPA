@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HomePage } from "./pages/HomePage";
-import { NewEmployeePage } from "./pages/NewEmployeePage";
-import { EditEmployeePage } from "./pages/EditEmployeePage";
+import { HomePage } from "./pages/Employees/HomePage";
+import { NewEmployeePage } from "./pages/Employees/NewEmployeePage";
+import { EditEmployeePage } from "./pages/Employees/EditEmployeePage";
 function App() {
   return (
     <BrowserRouter>

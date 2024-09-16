@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ButtonNew } from "./UI/ButtonNew";
+import { ButtonNew } from "./UI/Button/ButtonNew";
 export const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-info-subtle">

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { createEmployee } from "../service/employee.service";
-import { useForm } from "../hooks/useForm";
-import { FormItem } from "../components/UI/FormItem";
+import { createEmployee } from "../../service/employee.service";
+import { useForm } from "../../hooks/useForm";
+import { FormItem } from "../../components/UI/FormItem";
 
 export const NewEmployeePage = () => {
   const navigate = useNavigate();

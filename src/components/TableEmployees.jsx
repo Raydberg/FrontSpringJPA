@@ -1,6 +1,6 @@
 import { useEmployees } from "../hooks/useEmployees";
-import { ButtonEdit } from "./UI/ButtonEdit";
-import { ButtonDelete } from "./UI/ButtonDelete";
+import { ButtonEdit } from "./UI/Button/ButtonEdit";
+import { ButtonDelete } from "./UI/Button/ButtonDelete";
 import { useNavigate } from "react-router-dom";
 export const TableEmployees = () => {
   const { employees,handleDelete } = useEmployees();
